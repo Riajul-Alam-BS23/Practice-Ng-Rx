@@ -4,12 +4,24 @@ import { PostsState } from './../posts/state/posts.state';
 import { counterReducer } from '../counter/state/counter.reducer';
 import { postsReducer } from '../posts/state/posts.reducer';
 
-export interface AppState {
-  counter: CounterState;
-  posts: PostsState;
+// export interface AppState {
+//   counter: CounterState;
+//   posts: PostsState;
+// }
+
+// export const appReducer = {
+//   counter: counterReducer,
+//   posts: postsReducer,
+// };
+
+
+
+export interface AppState{
+  couunter:CounterState;
+  posts:PostsState
 }
 
-export const appReducer = {
-  counter: counterReducer,
-  posts: postsReducer,
+export const appReducers={
+  counter:counterReducer,
+  posts:postsReducer
 };
